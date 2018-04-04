@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML 5 and CSS 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+   
+  </head>
+
+  <body>
+      
+      <form id="myForm" action="processform.php">
+      
+        <p>Placeholder: <input type="text" placeholder="Insert Name Here"></p>
+          
+          <p>Autofocus: <input type="text" autofocus></p>
+          
+          <p>Autocomplete Off: <input type="text" autocomplete="off"></p> //particularly start from here.
+          
+          <p>Required: <input type="text" required></p>
+          
+          <p>Email: <input type="email"></p>
+          
+          <p>Pattern: <input type="text" pattern="[0-9]"</p>
+              
+              <datalist id="names">
+                
+                  <select>
+                      <option value="Rob">Rob</option>
+                      <option value="Kirsten">Kirsten</option>
+                      <option value="Tommy">Tommy</option>
+                      <option value="Ralphie">Ralphie</option>
+                  </select>
+                  
+              </datalist>
+              
+          <p>Autocomplete: <input type="text" list="names"></p>
+          
+          <p>Multiple file upload: <input type="file" multiple></p>
+          
+          <p><input type="submit" value="Submit to processform2.php" formaction="processform2.php" formmethod="post"></p>
+      
+      </form>
+      
+            <p>Code outside form: <input form="myForm" type="text"></p>
+   
+  </body>
+</html>
